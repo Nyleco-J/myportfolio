@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 82rem;
+}
+html{
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+
+/* @layer base{
+    .container{
+        @apply p-[1.5rem] max-w-[140rem] mx-auto
+        max-width: 10rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+} */
+
+@layer components{
+    .toggle__menu span{
+        width: 2rem;
+        height: .2rem;
+        background-color: #FFBE42;
+        display: block;
+        border-radius: 5rem;
+        transition: .5s ease;
+    }
+    .toggle__menu span:nth-child(2){
+        margin: .2rem 0;
+    }
+    .toggle__menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg]  ease-out duration-[.5s];
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0;
+    }
+    .toggle__menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[-225deg]  ease-out duration-[.5s];
+    }
+    .header__nav ul{
+        @apply absolute bg-lgray right-0 top-[6.4rem] w-0 p-0 overflow-hidden h-[100vh] z-[1] lg:static lg:w-full lg:h-auto lg:bg-transparent;
+    }
+    .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
+        @apply lg:mx-[1rem];
+    }
+    .header__nav ul.open{
+        @apply w-[85%];
+    }
+    .header__nav ul{
+        @apply text-center py-[10rem] lg:py-[0];
+    }
+    .header__nav ul li a{
+        @apply hover:text-yellow;
+    }
+    .btn{
+        @apply inline-block py-[.5rem] px-[2rem];
+    }
+    .projects_slider img{
+        @apply h-[17rem] w-[40rem] lg:h-[44rem] lg:w-auto lg:object-center lg:object-fill lg:m-auto;
+    }
+    .tns-outer button, [role="stop"] {
+        @apply hidden;
+    }
+    .proj-display{
+        @apply hidden;
+    }
+    .proj-display.active{
+        @apply block;
+    }
+    .imageskills:hover .hover{
+            @apply lg:opacity-[1] ;     
+    }
+    .imageskills:hover .image{
+            @apply lg:opacity-[0] ;
+    }
+    .projects ul li.active{
+        @apply text-yellow;
+    }
+    .header .header__nav ul li a.active{
+        @apply text-yellow;
+    }
+    .services .services__content:hover{
+        @apply lg:h-[38rem] lg:w-[35rem] lg:ease-in-out lg:duration-300
+    }
+    .services .fullcard{
+        @apply lg:flex lg:items-center lg:justify-center lg:gap-[1rem] lg:h-[40rem] lg:w-full
+    }
+    .contact .socmed ul li i{
+        @apply hover:text-yellow;
+    }
+}

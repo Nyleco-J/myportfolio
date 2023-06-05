@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+</head>
+<body>
+    <header class="header bg-gray border-b-2 fixed w-full z-10">
+        <div class="container">
+            <div class="header__wrapper flex items-center justify-between z-[-1]">
+                <div class="branding">
+                    <img src="./img/Logo Desktop.png" alt="" class="w-[5rem]">
+                </div>
+                    <div class="header__nav">
+                        <ul class="lg:flex lg:items-center z-10">
+                            <li class="" id="header-1"><a href="#home" id="#home-link" class="closed active  text-white text-[2.5rem] lg:text-[1.5rem]">Home</a></li>
+                            <li class="" id="header-2"><a href="#services" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Services</a></li>
+                            <li class="" id="header-3"><a href="#skills" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Skills</a></li>
+                            <li class="" id="header-4"><a href="#contact" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Contact</a></li>
+                            <li class="" id="header-5"><a href="#projects" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="toggle__menu z-50 lg:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner bg-gray  pt-[7rem]" id="home">
+        <div class="container">
+            <div class="banner__wrapper lg:flex lg:flex-row-reverse lg:justify-between">
+                <div class="banner__img flex items-center justify-center">
+                    <img src="./img/Nylepic.png" alt="" class="w-[15rem] lg:w-[30rem]">
+                </div>
+                <div class="banner__text text-center my-[.5rem] lg:text-left lg:py-[5rem]">
+                    <p class="text-white text-[2rem] my-[.3rem]lg:text-[10rem] lg:hidden">Hello!</p>
+                    <h1 class="text-yellow font-bold text-[3.5rem] leading-[2.8rem] lg:leading-[2.5rem] pt-[.5rem] lg:text-[6rem] "><span class="text-white">I'm </span>NYLECO-J <span class="lg:hidden">ANURAN</span></h1>
+                    <p class="text-white pt-[.5rem] lg:pt-[2rem] lg:uppercase lg:font-bold lg:text-[1.5rem]"><span class="text-yellow ">Web Developer</span> & <span class="text-yellow">Web Designer</span> </p>
+
+                    <h3 class="text-white text-[1rem]text-justify my-[3.5rem] max-w-[25rem] m-auto lg:mx-0 lg:text-[1.3rem] lg:py-[2rem] lg:max-w-[40rem]">My passion is to create a unique website. I always look forward to working with people and groups who share an interest for creating websites. </h3>
+
+                    <div class="banner__button">
+                        <a href="javascript:void(0)" class="btn text-[1.2rem] text-black font-bold bg-white uppercase rounded-[2rem] focus:bg-yellow focus:text-white lg:hover:bg-yellow lg:hover:text-white shadow-md lg:hover:shadow-cyan-50">Hire Me</a>
+                    </div>
+
+                    <div class="socmed flex items-center justify-center pt-[3rem] lg:justify-start ">
+                        <ul class="flex gap-3 lg:pt-[1rem]">
+                            <li>
+                                <a href =" "class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href =" " class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-solid fa-envelope"></i></a>
+                                <a href =" " class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-brands fa-github"></i></a>  
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects bg-gray lg:bg-lgray" id="projects">
+        <div class="container">
+            <div class="projects__wrapper">
+                <div class="projects__content">
+                    <div class="projects__title text-center">
+                        <h1 class="text-[3rem] text-yellow font-semibold">Projects</h1>
+                    </div>
+                    <ul class="flex gap-10 justify-center items-center" >
+                        <li id="prev-proj-1" class="text-white text-[1.4rem] lg:text-[1.9rem] font-semibold proj-link active"><a href="javascript:void(0)">Tailwind</a></li>
+                        <li id="prev-proj-2" class="text-white text-[1.4rem] lg:text-[1.9rem] font-semibold proj-link"><a href="javascript:void(0)" >SASS</a></li>
+                        <li id="prev-proj-3" class="text-white text-[1.4rem] lg:text-[1.9rem] font-semibold proj-link"><a href="javascript:void(0)">Wordpress</a></li>
+                    </ul>
+                </div>
+                
+                <div class="projects_slider text-center">
+                    <div id="prev-proj-1-content" class="proj-display active py-[1rem]">
+                        <img src="./img/spotify.png" alt="">
+                    </div>
+                    <div id="prev-proj-2-content" class="proj-display my-slider py-[1rem]">
+                        <img src="./img/ff.png" alt="">
+                        <img src="./img/WT.png" alt="">
+                        <img src="./img/spotify.png" alt="">
+                    </div>
+                    <div id="prev-proj-3-content" class="proj-display my-slider1 py-[1rem]">
+                        <img src="./img/cvd.png" alt="">
+                        <img src="./img/thblog.png" alt="">
+                    </div>
+                    
+                     <a href="javascript:void(0)" class="text-[.9rem] font-semibold bg-white rounded-[2rem] inline-block focus:bg-yellow py-[.3rem] px-[.8rem] lg:py-[.8rem] lg:px-[1.5rem] lg:text-[1.1rem] lg:hover:bg-yellow lg:hover:text-white">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills relative z-0 bg-gray p-[2rem]" id="skills">
+        <div class="container">
+            <div class="skills_title flex items-center justify-center">
+                <h1 class="text-yellow text-[3rem] font-semibold pb-[3rem]">Skills</h1>
+            </div>
+            <div class="skills__wrapper max-w-[60rem] m-auto">
+            
+            <div class="icons grid grid-cols-4 gap-[4rem] lg:gap-[1.8rem] justify-center items-center place-items-center">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class ="image w-[4.8rem] lg:w-[5.5rem]" src="./img/Html black.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/html-5-color.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">HTML</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/tailwind-css-svgrepo-com 1.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="lg:w-[6rem]" src="./img/tailwind-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Tailwind</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/css.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/css-3-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">CSS</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/sass.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="lg:w-[6rem]" src="./img/sass-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">SASS</h4>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="proj-center grid grid-cols-3 gap-[1rem] justify-center items-center place-items-center pt-[2rem] max-w-[45rem] m-auto">
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/wp.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/wordpress-color-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Wordpress</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/figma.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/figma-svgrepo-com 1.png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Figma</h4>
+                    </div>
+                </div>
+                <div class="imageskills bg-yellow hover:lg:bg-lgray w-[6.8rem] h-[6.8rem] lg:w-[8rem] lg:h-[8rem] rounded-[50%] flex items-center  justify-center lg:rounded-none relative">
+                    <img class =" image w-[4.8rem] lg:w-[5.5rem]" src="./img/js.png" alt="">
+                    <div class="hover text-center opacity-0 absolute">
+                        <img class ="" src="./img/js (1).png" alt="">
+                        <h4 class="text-white text-[1.2rem] font-semibold ">Javascript</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+    <section class="services bg-lgray"  id="services">
+        <div class="container">
+            <div class="services__wrapper">
+                <div class="services__title flex items-center justify-center">
+                    <h1 class="text-yellow text-[3rem] font-semibold">Services</h1>
+                </div>
+                <div class="full__service lg:flex lg:pt-[3rem]">
+                    <div class="fullcard"> 
+                <div class="services__content border border-yellow gap-[2rem] flex justify-center items-center p-[1rem] m-[2rem] lg:bg-yellow lg:max-w-[30rem] lg:h-[28rem] lg:flex-col lg:gap-[0] lg:m-[.8rem] lg:hover:bg-[rgb(250,250,250,.5)] lg:transition-all lg:border-none">
+                    <div class="services_image flex justify-center items-center">
+                        <span class="text-white text-[4rem] lg:text-[4.5rem]"><i class="fa-solid fa-pen-ruler"></i></span>
+                    </div>
+                    <div class="services__text ">
+                        <h2 class="text-white text-[2rem] font-semibold uppercase lg:text-center lg:text-[1.7rem]  lg:p-[.5rem]">ux & ui design</h2>
+                        <p class ="text-white text-justify max-w-[20rem] lg:text-center lg:text-[1.1rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque id qui porro architecto, assumenda exercitationem fugiat molestiae ex? Vel ipsam eum consequuntur eius pariatur eveniet corrupti perspiciatis provident quas vero.</p>
+                    </div>
+                </div>
+                <div class="services__content border border-yellow gap-[2rem] flex justify-center items-center p-[1rem] m-[2rem] lg:bg-yellow lg:max-w-[30rem] lg:h-[28rem] lg:flex-col lg:gap-[0] lg:m-[.8rem] lg:hover:bg-[rgb(250,250,250,.5)] lg:transition-all lg:border-none">
+                    <div class="services_image flex justify-center items-center">
+                          <span class="text-white text-[4rem] lg:text-[4.5rem]"><i class="fa-brands fa-wordpress"></i></span>
+                    </div>
+                    <div class="services__text ">
+                        <h2 class="text-white text-[2rem] font-semibold uppercase lg:text-center lg:text-[1.7rem]  lg:p-[.5rem]">Wordpress</h2>
+                        <p class ="text-white text-justify max-w-[20rem] lg:text-center lg:text-[1.1rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque id qui porro architecto, assumenda exercitationem fugiat molestiae ex? Vel ipsam eum consequuntur eius pariatur eveniet corrupti perspiciatis provident quas vero.</p>
+                    </div>
+                </div>
+                <div class="services__content border border-yellow gap-[2rem] flex justify-center items-center p-[1rem] m-[2rem] lg:bg-yellow lg:max-w-[30rem] lg:h-[28rem] lg:flex-col lg:gap-[0] lg:m-[.8rem] lg:hover:bg-[rgb(250,250,250,.5)] lg:transition-all lg:border-none">
+                    <div class="services_image flex justify-center items-center">
+                        <span class="text-white text-[4rem] lg:text-[4.5rem]"><i class="fa-solid fa-laptop-code"></i></span>
+                    </div>
+                    <div class="services__text ">
+                        <h2 class="text-white text-[2rem] font-semibold uppercase lg:text-center lg:text-[1.7rem]  lg:p-[.5rem]">web development</h2>
+                        <p class ="text-white text-justify max-w-[20rem] lg:text-center lg:text-[1.1rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque id qui porro architecto, assumenda exercitationem fugiat molestiae ex? Vel ipsam eum consequuntur eius pariatur eveniet corrupti perspiciatis provident quas vero.</p>
+                    </div>
+                </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact bg-gray lg:bg-[url('img/background.png')] bg-no-repeat bg-cover" id="contact">
+        <div class="lg:bg-[rgb(36,36,36,0.5)]">
+            <div class="container">
+                <div class="contact__title flex items-center justify-center">
+                    <h1 class="text-yellow text-[3rem] font-semibold">Contact Me</h1>
+                </div>
+                <div class="contact__wrapper lg:flex lg:gap-[3rem]">
+                    <div class="contact__left">
+                        <small class="text-yellow text-[1.5rem] font-semibold mx-[1rem]">Hire me</small>
+                    <p class="text-white text-[1.2rem] mx-[1rem] lg:max-w-[40rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam asperiores magni repellat explicabo unde.</p>
+                    <div class="socmed py-[2rem] mx-[1rem] lg:py-[8rem]">
+                      <ul class="flex flex-col text-white">
+                        <li class="text-[1.5rem]"><i class="fa-solid fa-phone"></i><span class="text-[1.2rem] mx-[1rem]">+639703322029</span></li>
+                        <li class="text-[1.5rem] py-[.5rem] lg:my-[3rem]"><i class="fa-solid fa-envelope"></i><span class="text-[1.2rem] mx-[1rem]">anuran.nyleco24@gmail.com</span></li>
+                        <li class="text-[1.5rem]"><i class="fa-solid fa-location-dot"></i><span class="text-[1.2rem] mx-[1.2rem]">282 Poblacion III San Pedro Alaminos, Laguna</span></li>
+                      </ul>
+                    </div>
+                    </div>
+                    
+                    <div class="send__message">
+                        <h1 class="text-yellow text-[1.5rem] font-semibold text-center lg:text-left">Send a message</h1>
+                            <div class="info items-center py-[1rem]">
+                                <form action="" class="lg:flex lg:flex-col ">
+                                    <div class="inputgroup">
+                                        <input type="text"  placeholder="First Name" id="" class="w-[27rem] py-[1rem] lg:w-[32rem] rounded-[.5rem] p-[1rem] text-black" >
+                                        <br>
+                                        <input type="text"  placeholder="Last Name" id="" class="my-[1rem] w-[27rem] py-[1rem] lg:my-[1rem] lg:w-[32rem] rounded-[.5rem] p-[1rem]">
+                                        <br>
+                                        <input type="email"  placeholder="Email Address" id="" class=" w-[27rem] py-[1rem] lg:w-[32rem] rounded-[.5rem] p-[1rem]">
+                                        <br>
+                                        <input type="contact"  placeholder="Contact number" id="" class="my-[1rem] w-[27rem] py-[1rem] lg:my-[1rem] lg:w-[32rem] rounded-[.5rem] p-[1rem]">
+                                        <br>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="What do you want to say?" class=" lg:my-0 w-[27rem] py-[.5rem] lg:w-[32rem] lg:h-[15rem] rounded-[.5rem] p-[1rem]"></textarea>
+                                        <div class="send lg:justify-items-end text-center lg:ml-auto my-[1rem]">
+                                            <input type="submit" value="Send" class="btn text-[1.2rem] text-black font-bold bg-white rounded-[2rem] focus:bg-yellow focus:text-white lg:hover:bg-yellow lg:hover:text-white lg:w-[7rem]">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer bg-gray border-t-2 lg:flex">
+        <div class="container">
+            <div class="footer__wrapper flex flex-col items-center text-white lg:flex lg:flex-row lg:justify-between">
+                <h3 class="uppercase font-semibold">find with me</h3>
+                <ul class="flex gap-3">
+                    <li>
+                        <a herf =" "class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a herf =" " class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-solid fa-envelope"></i></a>
+                        <a herf =" " class="text-[1.5rem] text-white lg:hover:text-yellow"><i class="fa-brands fa-github"></i></a>  
+                    </li>
+                <p>©Copyright. All right reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+    class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md  bg-white lg:hover:bg-yellow text-black text-lg font-semibold transition-colors duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+    </svg>
+    <span class="sr-only">Go to top</span>
+</button>
+
+  
+<script>
+    var slider = tns({
+      container: '.my-slider',
+      items: 1,
+      responsive: {
+        640: {
+          edgePadding: 20,
+          gutter: 20,
+          items: 2
+        },
+        700: {
+          gutter: 30
+        },
+        900: {
+          items: 3
+        }
+      }
+    });
+  </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+  import {tns} from './src/tiny-slider.js';
+
+  var slider = tns({
+    container: '.my-slider',
+    items: 3,
+    slideBy: 'page',
+    autoplay: true
+  });
+  </script>
+    <script src="./script.js"></script>
+</body>
+</html>
